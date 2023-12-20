@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        h3 {
+            margin: 50px;
+        }
+
+        .slidein {
+            display: flex;
+            gap: 10px;
+            padding: 50px;
+            width: 100px;
+            animation: 3s ease-in-out 1s infinite normal none running slidein;
+            /* animation-timing-function: ease-in-out;
+            animation-play-state: running;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-range/start/end: contain & cover, cover 20%, 25% 50%, entry exit, entry 10% 90%, 10% exit 90%, entry 10% 90%;
+            animation-name: slidein; */
+        }
+
+        @keyframes slidein {
+            0% {
+                margin-left: -10%;
+            }
+
+            100% {
+                margin-left: 120%;
+            }
+        }
+
+        span {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: red;
+
+        }
+
+        .outline {
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            border-radius: 100%;
+            background-color: red;
+            position: relative;
+            animation: myfirst 2s ease infinite alternate;
+
+        }
+
+        @keyframes myfirst {
+            0% {
+                outline: 0px solid rgb(204, 0, .0);
+            }
+
+            100% {
+                outline: 20px solid rgb(204, 0, .8);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>CSS Animation</h1>
+
+    <p>This example uses the shorthand animation property:</p>
+
+
+    <div class="slidein">
+        <span>Test</span>
+    </div>
+    <h3 class="outline">Test</h3>
+
+</body>
+
+</html>
